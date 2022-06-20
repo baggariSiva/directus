@@ -1,10 +1,10 @@
 config:
   runTime: "NodeJs"
   version: ""
-  framework: ""
+  framework: "Directus-Postgres"
   buildCommand: ""
   buildDir: ""
-  runCommand: "npx directus start"
+  runCommand: "npm run start"
   installCommand: "npm install"
 ports:
   - protocol: "HTTPS"

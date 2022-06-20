@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A Directus Application",
   "scripts": {
-    "start" : "directus start",
+    "start" : "directus bootstrap && directus start",
     "bootstrap": "directus bootstrap"
   },
   "devDependencies": {
