@@ -21,3 +21,33 @@ exposedPorts:
     hostPort: "8055"
     containerPort: "8055"
     interface: "172.17.0.1"
+volumes:
+  - hostPath: "./data"
+    containerPath: "/var/lib/postgresql/data"
+environments:
+  - key: "KEY"
+    value: "6e56810e-d232-4a38-9648-26553534bdc4"
+  - key: "SECRET"
+    value: "4ly1FxhDqv44OxzXIdoN-rjxh7R19ocQ"
+  - key: "DB_CLIENT"
+    value: 'pg'
+  - key: "DB_HOST"
+    value: '172.17.0.1'
+  - key: "DB_PORT"
+    value: '5432'
+  - key: "DB_DATABASE"
+    value: 'directus'
+  - key: "DB_USER"
+    value: 'directus'
+  - key: "DB_PASSWORD"
+    value: 'directus'
+  - key: "CACHE_ENABLED"
+    value: 'true'
+  - key: "CACHE_STORE"
+    value: 'redis'
+  - key: "CACHE_REDIS"
+    value: 'redis://cache:6379'
+  - key: "ADMIN_EMAIL"
+    value: 'admin@example.com'
+  - key: "ADMIN_PASSWORD"
+    value: 'd1r3ctu5'
