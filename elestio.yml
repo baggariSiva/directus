@@ -42,11 +42,9 @@ environments:
   - key: "DB_PASSWORD"
     value: 'directus'
   - key: "CACHE_ENABLED"
-    value: 'true'
+    value: 'false'
   - key: "CACHE_STORE"
-    value: 'redis'
-  - key: "CACHE_REDIS"
-    value: 'redis://cache:6379'
+    value: 'memory'
   - key: "ADMIN_EMAIL"
     value: 'admin@example.com'
   - key: "ADMIN_PASSWORD"
