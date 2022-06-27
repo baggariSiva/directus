@@ -26,9 +26,9 @@ volumes:
     containerPath: "/var/lib/postgresql/data"
 environments:
   - key: "KEY"
-    value: "6e56810e-d232-4a38-9648-26553534bdc4"
+    value: "random_password"
   - key: "SECRET"
-    value: "4ly1FxhDqv44OxzXIdoN-rjxh7R19ocQ"
+    value: "random_password"
   - key: "DB_CLIENT"
     value: 'pg'
   - key: "DB_HOST"
@@ -40,12 +40,12 @@ environments:
   - key: "DB_USER"
     value: 'directus'
   - key: "DB_PASSWORD"
-    value: 'directus'
+    value: 'random_password'
   - key: "CACHE_ENABLED"
     value: 'false'
   - key: "CACHE_STORE"
     value: 'memory'
   - key: "ADMIN_EMAIL"
-    value: 'admin@example.com'
+    value: '[EMAIL]'
   - key: "ADMIN_PASSWORD"
-    value: 'd1r3ctu5'
+    value: 'random_password'
